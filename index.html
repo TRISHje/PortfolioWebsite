@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* body{
-            background: url() no-repeat center center/cover ;
-            /* opacity: .5; */
-        
-    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    
+
 <body>
+
     <header>
         <nav>
-            <div class="logo">Trishyo's Corner</div>
+            <div class="logo">Trishyo's Portfolio</div>
             <ul class="navbar">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -23,50 +29,80 @@
             </ul>
         </nav>
     </header>
-    
+
     <section id="home">
         <div class="home-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hi, I'm Trishyo, a Java and a frontend Developer.</p>
-            <a href="#projects" class="btn">See My Work</a>
+            <div class="leftsection">
+                <h1>Hi, My Name is <span class="purple">Trishyo</span></h1>
+                <h1>and I'm a passionate </h1>
+                <h1 id="element"></h1>
+            </div>
+            <div class="rightsection">
+                <img src="developer.png" alt="">
+            </div>
+
+
+
         </div>
     </section>
 
     <section id="about">
+        <p class="grey">insights about me</p>
+        <h2>About</h2>
         <div class="about-content">
-            <h2>About Me</h2>
-            <p>[Brief introduction about yourself]</p>
-        </div>
+
+            <p>I'm a 21-year-old Java developer with a strong passion for solving complex problems. With a solid
+                foundation in backend development, I bring a creative and analytical approach to coding. As an
+                intermediate frontend developer, I enjoy crafting user-friendly interfaces that complement the robust
+                functionality of the applications I build. Driven by a love for learning and a commitment to continuous
+                improvement, I'm always eager to take on new challenges and refine my skills in both Java and frontend
+                development.</p>
+                
+            <!-- <img src="image.jpg" alt=""></div> -->
     </section>
+
+    <div class="buttons-about"> 
+        <button class="btn">Download Resume</button>
+        </div>
+        
 
     <section id="Experience">
         <div class="Experience-content">
+            <span class="grey">what i have done so far</span>
             <h2>Experiences</h2>
             <div class="Experience-grid">
                 <h3>Digital Asset Manager (Freelancing)</h3>
-                <li>Business Management: Independently managed the buying and selling of Digital assets, overseeing the entire transaction process from acquisition to sale. Developed and implemented strategies for sourcing, pricing, and marketing accounts.</li>
-            <li>Communication: Interacted with a diverse customer base (national and international clients) through various online platforms, addressing inquiries, resolving issues, and providing support. This experience refined my ability to communicate clearly and professionally.</li>
-            <li>Financial Oversight: Handled financial transactions, tracked sales performance, and managed budgets for account procurement and marketing expenses. </li>
+                <li>Business Management: Independently managed the buying and selling of Digital assets, overseeing the
+                    entire transaction process from acquisition to sale. Developed and implemented strategies for
+                    sourcing, pricing, and marketing accounts.</li>
+                <li>Communication: Interacted with a diverse customer base (national and international clients) through
+                    various online platforms, addressing inquiries, resolving issues, and providing support. This
+                    experience refined my ability to communicate clearly and professionally.</li>
+                <li>Financial Oversight: Handled financial transactions, tracked sales performance, and managed budgets
+                    for account procurement and marketing expenses. </li>
             </div>
-            
-            
+
+
         </div>
     </section>
 
     <section id="projects">
         <div class="projects-content">
+            <p class="grey">my small works</p>
             <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="project-item">
-                    
+
                     <h3>Sudoku Solver</h3>
-                     
-                    <li>Developed a fully functional Sudoku Solver, capable of solving any given Sudoku puzzle, implemented entirely in Java for robust backend logic.</li>
-                        <li>Integrated Java's Swing and AWT packages to design and manage the user interface, ensuring a responsive and intuitive user experience.</li>
-                       <li>Enhanced problem-solving and algorithmic skills by implementing backtracking.</li>
-                       <li>Tools Used: Java, Swing, AWT</li>
-                       
-                       
+
+                    <li>Developed a fully functional Sudoku Solver, capable of solving any given Sudoku puzzle,
+                        implemented entirely in Java for robust backend logic.</li>
+                    <li>Integrated Java's Swing and AWT packages to design and manage the user interface, ensuring a
+                        responsive and intuitive user experience.</li>
+                    <li>Enhanced problem-solving and algorithmic skills by implementing backtracking.</li>
+                    <li>Tools Used: Java, Swing, AWT</li>
+
+
                 </div>
                 <!-- Add more project items here -->
             </div>
@@ -79,13 +115,13 @@
             <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                
+
                 <button type="submit">Send Message</button>
             </form>
         </div>
@@ -96,5 +132,13 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Java Developer', 'Frontend Developer', 'Entrepreneur.'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
+
 </html>
