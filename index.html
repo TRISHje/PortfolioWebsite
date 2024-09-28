@@ -24,8 +24,10 @@
             <ul class="navbar">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -35,7 +37,7 @@
             <div class="leftsection">
                 <h1>Hi, My Name is <span class="purple">Trishyo</span></h1>
                 <h1>and I'm a passionate </h1>
-                <h1 id="element"></h1>
+                <span id="element"><span>
             </div>
             <div class="rightsection">
                 <img src="developer.png" alt="">
@@ -45,27 +47,99 @@
 
         </div>
     </section>
-
-    <section id="about">
-        <p class="grey">insights about me</p>
-        <h2>About</h2>
-        <div class="about-content">
-
-            <p>I'm a 21-year-old Java developer with a strong passion for solving complex problems. With a solid
-                foundation in backend development, I bring a creative and analytical approach to coding. As an
-                intermediate frontend developer, I enjoy crafting user-friendly interfaces that complement the robust
-                functionality of the applications I build. Driven by a love for learning and a commitment to continuous
-                improvement, I'm always eager to take on new challenges and refine my skills in both Java and frontend
-                development.</p>
+    <section id="projects">
+        <div class="projects-content">
+            <p class="grey">my small works</p>
+            <h2>Projects</h2>
+            <div class="projects-grid">
                 
-            <!-- <img src="image.jpg" alt=""></div> -->
+                <div class="project-card">
+                    <img src="https://uploads.codehs.com/c1a81417ea0bb50b9668d9d8d4943ec8" alt="Project 1">
+                    <h3>Sudoku Solver</h3>
+
+                    <li>Developed a fully functional Sudoku Solver, capable of solving any given Sudoku puzzle,
+                        implemented entirely in Java for robust backend logic.</li>
+                    <li>Integrated Java's Swing and AWT packages to design and manage the user interface, ensuring a
+                        responsive and intuitive user experience.</li>
+                    <li>Enhanced problem-solving and algorithmic skills by implementing backtracking.</li>
+                    <li>Tools Used: Java, Swing, AWT</li>
+                    <a href="https://github.com/TRISHje/SudokuSolver" target="_blank">View Code</a>
+                </div>
+
+                    
+
+                    <div class="project-card">
+                        <img src="https://img.freepik.com/free-vector/gradient-stock-market-concept_23-2149166910.jpg" alt="Restaurant Website Project Image">
+                        <h3>Stock Developer App</h3>
+                        <li> Developed a web application that predicts and visualizes future stock prices for selected companies like Google,
+                            Apple, and Microsoft.</li>
+                        <li> The app allows users to select a stock, specify a prediction period, and view both raw historical data and
+                            forecasted trends over the chosen. </li>
+                        <li> Tools used: Python, Streamlit, Prophet, Plotly, yfinance</li>
+                        <a href="https://github.com/TRISHje/Stock-Prediction" target="_blank">View Code</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://media.npr.org/assets/img/2022/07/29/ap21188557258852_wide-7b9355bc9f3f776844d5ceb5148fe6d60c40eccd.jpg" alt="Restaurant Website Project Image">
+                        <h3>Slot Machine Game</h3>
+                        <li>Developed a text-based slot machine game where players can deposit money, place bets, and spin to win based
+                        on randomly generated symbols</li>
+                        <li>Players bet on up to 3 lines, and winnings are determined by matching symbols across those lines, with the
+                        game tracking the player's balance throughout.
+                        <li>Tools Used: Python</li>
+                        <a href="https://github.com/TRISHje/Slot-Machine" target="_blank">View Code</a>
+                    </div>
+                </div>
+                <!-- Add more project items here -->
+            </div>
+        </div>
     </section>
 
     <div class="buttons-about"> 
         <button class="btn">Download Resume</button>
         </div>
-        
 
+
+    <section id="about">
+        <p class="grey">insights about me</p>
+        <h2 >About</h2>
+        <div class="about-content">
+
+            <spid id="about-id"></spid>
+                
+            <!-- <img src="image.jpg" alt=""></div> -->
+    </section>
+
+    
+        
+        <section class="timeline" id ="education">
+            <h2>Education</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="icon">🎓</div>
+                    <div class="content">
+                        <h3>Class 10</h3>
+                        <p>WWA Cossipore English School (2008-2019)</p>
+                        <p>Completed Class 10 with a score of 96.8%.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="icon">🎓</div>
+                    <div class="content">
+                        <h3>Class 12</h3>
+                        <p>WWA Cossipore English School (2019-2021)</p>
+                        <p>Specialized in Science with Physics, Chemistry, Mathematics and Computer Science, and passed with a score of 92%.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="icon">🎓</div>
+                    <div class="content">
+                        <h3>Bachelor's Degree</h3>
+                        <p>Indian Institute of Engineering Science and Technology</p>
+                        <p>Pursuing a Bachelor's Degree in Aerospace Engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     <section id="Experience">
         <div class="Experience-content">
             <span class="grey">what i have done so far</span>
@@ -86,29 +160,7 @@
         </div>
     </section>
 
-    <section id="projects">
-        <div class="projects-content">
-            <p class="grey">my small works</p>
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-item">
-
-                    <h3>Sudoku Solver</h3>
-
-                    <li>Developed a fully functional Sudoku Solver, capable of solving any given Sudoku puzzle,
-                        implemented entirely in Java for robust backend logic.</li>
-                    <li>Integrated Java's Swing and AWT packages to design and manage the user interface, ensuring a
-                        responsive and intuitive user experience.</li>
-                    <li>Enhanced problem-solving and algorithmic skills by implementing backtracking.</li>
-                    <li>Tools Used: Java, Swing, AWT</li>
-
-
-                </div>
-                <!-- Add more project items here -->
-            </div>
-        </div>
-    </section>
-
+   
     <section id="contact">
         <div class="contact-content">
             <h2>Contact Me</h2>
@@ -128,6 +180,9 @@
     </section>
 
     <footer>
+        
+            
+        
         <p>&copy; 2024 Trishyo Bhattacharjee. All rights reserved.</p>
     </footer>
 
@@ -135,8 +190,17 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Java Developer', 'Frontend Developer', 'Entrepreneur.'],
+            strings: ['Java Developer', 'Frontend Developer', 'Data Enthusiast', 'Entrepreneur.'],
             typeSpeed: 50,
+        });
+        var typed = new Typed('#about-id', {
+            strings: [`I'm a 21-year-old Java developer with a strong passion for solving complex problems. With a solid
+                foundation in backend development, I bring a creative and analytical approach to coding. As an
+                intermediate frontend developer, I enjoy crafting user-friendly interfaces that complement the robust
+                functionality of the applications I build. Driven by a love for learning and a commitment to continuous
+                improvement, I'm always eager to take on new challenges and refine my skills in both Java and frontend
+                development.`],
+            typeSpeed: 15,
         });
     </script>
 </body>
